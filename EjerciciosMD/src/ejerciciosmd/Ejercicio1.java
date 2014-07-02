@@ -127,15 +127,16 @@ public class Ejercicio1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
    int[] serie= new int[255];
-    int suma;
-    int resultado;
+    
+    
     
     public int funcionEjercicio1(int x, int y)
     { 
+        int resultado=0;
        serie[0]=7;
        serie[1]=6;
-       int i;
-    for( i=0;i<=252;i++ )
+       
+    for(int i=0;i<=252;i++ )
     {
       
     if((i+1)%2==0)
@@ -159,7 +160,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
     }
     else
     {
-        for( i=0;i<254;i++ )
+        for(int i=0;i<=254;i++ )
         {
         if(i==(x-1)||(i==(y-1)))
         {
