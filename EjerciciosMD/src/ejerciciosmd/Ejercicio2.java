@@ -45,6 +45,12 @@ public class Ejercicio2 extends javax.swing.JFrame {
         jTextArea1.setText("Mira esta serie: 2, 2, 4, 12, 48, ... la semilla de esta serie fue el número 2 Mira esta serie:. 3, 3, 6, 18, 72, ... la semilla de esta serie fue el número 3.\nCree una función que recibe dos enteros: x, y  y. Si alguno de ellos es 0 o negativo, o si son mayores que 255, la función debe devolver -1\nLa función debe devolver el elemento y de las series generadas por x.\nPor ejemplo, si la serie recibe x = 3, y = 4, es conveniente devolver 72, porque 72 es el cuarto elemento de la serie generado cuando x = 3.\nLa función recibirá 2 enteros, y devuelve un entero.\n");
         jScrollPane1.setViewportView(jTextArea1);
 
+        txtX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtXActionPerformed(evt);
+            }
+        });
+
         jLabel1.setText("X");
 
         jLabel2.setText("Y");
@@ -57,6 +63,8 @@ public class Ejercicio2 extends javax.swing.JFrame {
         });
 
         jLabel3.setText("Resultado");
+
+        txtResul.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -130,6 +138,10 @@ public class Ejercicio2 extends javax.swing.JFrame {
         
         txtResul.setText(Integer.toString(result));
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtXActionPerformed
 
    int[] serie= new int[255];
     int suma;

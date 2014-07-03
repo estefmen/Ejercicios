@@ -58,6 +58,8 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
         jLabel3.setText("Resultado");
 
+        jTextField3.setEditable(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(

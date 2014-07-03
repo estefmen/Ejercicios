@@ -112,6 +112,9 @@
     <Component class="javax.swing.JTextField" name="txtY">
     </Component>
     <Component class="javax.swing.JTextField" name="txtResul">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>

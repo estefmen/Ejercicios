@@ -56,6 +56,8 @@ public class Ejercicio3 extends javax.swing.JFrame {
             }
         });
 
+        txtResul.setEditable(false);
+
         jLabel3.setText("Resultado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
