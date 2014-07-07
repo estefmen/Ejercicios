@@ -44,24 +44,24 @@ public class Ejercicio21 {
                  System.out.println("El numero q mas se repite es: "+resultado);
     }
      public String Matriz1(String [][]M){
-        String res = null;
+        String res = "";
        // int[][] M = new int[3][3];
-        for (int a = 0; a < 3 / 2; a++) {
-            for (int i = a; i < 3 - a; i++) {
-            res = res + String.valueOf(M[a][i]);
+        for (int a = 0; a < M.length / 2; a++) {
+            for (int i = a; i < (M.length-1) - a; i++) {
+            res = res + M[a][i];
         }
-        for (int i = a; i < 3 - a; i++) {
-            res = res + String.valueOf(M[i][3 - a + 1]);
+        for (int i = a; i < M.length - a; i++) {
+            res = res + M[i][(M.length-1) - a];
         }
-        for (int i = 3 - a + 1; i >= a + 1; i--) {
-            res = res + String.valueOf(M[3 - a + 1][i]);
+        for (int i = (M.length-1) - a; i >= a; i--) {
+            res = res + M[(M.length-1) - a ][i];
         }
-        for (int i = 3 - a + 1; i >= a + 1; i--) {
-            res = res + String.valueOf(M[i][a]);
+        for (int i = (M.length-1) - a ; i >= a; i--) {
+            res = res +M[i][a];
         }
         }
-        if (3 % 2 == 1) {
-            res = res + String.valueOf(M[3 / 2 + 1][3 / 2 + 1]);
+        if (M.length % 2 == 1) {
+            res = res + M[(M.length / 2)][(M.length / 2)];
         }
         return res;
     }
